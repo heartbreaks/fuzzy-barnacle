@@ -1,0 +1,328 @@
+@import url(fonts.css);
+
+/* @keyframes rotate {
+    25% {
+        transform: translate(1px,1px);
+    }
+    50% {
+        transform: translate(5px, 1px);
+    }
+    75% {
+        transform: translate(-1px, -1px);
+    }
+    100% {
+        transform: translate(-5px, -1px);
+    }
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    background: rgb(196,255,248);
+    background: linear-gradient(90deg, rgba(196,255,248,1) 0%, rgba(255,196,180,0.9) 23%, rgba(245,175,255,0.6951155462184874) 44%, rgba(151,33,193,0) 68%);
+    padding: 15px;
+}
+
+.header__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 80%;
+    color: tomato; 
+    /* rgb(73, 100, 255) */
+    font-size: 56px;
+    padding-left: 45px;
+}
+
+.header__text-body {
+    font-size: 36px;
+    line-height: 1.15;
+    color: tomato;
+    font-weight: 400;
+}
+
+.header__text-body:first-child {
+    margin-top: 50px;
+}
+
+.header_image {
+    position: relative;
+    right: 100px;
+    width: 400px;
+    height: 400px;
+    z-index: 2;
+}
+
+.header__img {
+    background-image: url('memoji.png');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.header__dot {
+    width: 250px;
+    height: 250px;
+    background-color: black;
+    border-radius: 12rem;
+}
+
+
+.header__dot_color_red {
+    position: absolute;
+    top: 25px;
+    right: 50px;
+    background-color: tomato;
+    z-index: -1;
+}
+
+.header__button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 24px;
+    background-color: rgba(255, 255, 255, 0.74);
+    width: 220px;
+    padding: 15px;
+    border-radius: 1rem;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.header__button:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.header__dot_color_light-green {
+    width: 15px;
+    height: 15px;
+    background-color: greenyellow;
+    margin-right: 10px;
+}
+.header__dot_color_light-orange {
+    position: absolute;
+    top: 150px;
+    left: 500px;
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    animation: rotate 3s infinite both;	
+    animation-fill-mode: both;	
+}
+
+.header__dot_color_black-blue {
+    position: absolute;
+    bottom: 100px;
+    right: 700px;
+    background-color: rgb(0, 0, 134);
+    
+    width: 25px;
+    height: 25px;
+}
+
+
+@media (max-width: 1199px) {
+
+    .header__info {
+        font-size: 36px;
+        color: tomato;
+        width: 70%;
+    }
+
+    .header_image {
+        position: relative;
+        right: 50px;
+        width: 250px;
+        height: 250px;
+        z-index: 2;
+    }
+
+    .header__dot {
+        width: 150px;
+        height: 150px;
+    }
+    .header__dot_color_red {
+        top: 15px;
+        right: 60px;
+        background-color: tomato;
+        z-index: -1;
+    }
+
+    .header__dot_color_light-green {
+        width: 15px;
+        height: 15px;
+    }
+
+    .header__dot_color_black-blue {
+        right: 200px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .header__dot_color_light-orange {
+        top: 100px;
+        left: 500px;
+        width: 40px;
+        height: 40px;
+        background-color: orange;
+    }
+
+    .header__button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 15px;
+        background-color: rgba(255, 255, 255, 0.74);
+        width: 150px;
+        padding: 15px;
+        border-radius: 1rem;
+        transition: .3s;
+        cursor: pointer;
+    }
+
+    .header__text-body {
+        font-size: 20px;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+
+    .header__info {
+        font-size: 24px;
+        color: tomato;
+        width: 70%;
+    }
+
+    .header_image {
+        position: relative;
+        right: 20px;
+        width: 250px;
+        height: 250px;
+        z-index: 2;
+    }
+
+    .header__dot {
+        width: 150px;
+        height: 150px;
+    }
+    .header__dot_color_red {
+        top: 15px;
+        right: 40px;
+        background-color: tomato;
+        z-index: -1;
+    }
+
+    .header__dot_color_light-green {
+        width: 15px;
+        height: 15px;
+    }
+
+    .header__dot_color_black-blue {
+        right: 300px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .header__dot_color_light-orange {
+        top: 100px;
+        left: 500px;
+        width: 40px;
+        height: 40px;
+        background-color: orange;
+    }
+
+    .header__button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 15px;
+        background-color: rgba(255, 255, 255, 0.74);
+        width: 150px;
+        padding: 15px;
+        border-radius: 1rem;
+        transition: .3s;
+        cursor: pointer;
+    }
+
+    .header__text-body {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 575px) {
+
+    .header__info {
+        font-size: 10px;
+        color: tomato;
+        width: 80%;
+        padding: 5px;
+    }
+
+    .header_image {
+        position: relative;
+        right: 0;
+        width: 100px;
+        height: 100px;
+        z-index: 2;
+    }
+
+    .header__dot {
+        width: 70px;
+        height: 70px;
+    }
+    .header__dot_color_red {
+        top: 10px;
+        right: 10px;
+        background-color: tomato;
+    }
+
+    .header__dot_color_light-green {
+        width: 5px;
+        height: 5px;
+        margin-right: 3px;
+    }
+
+    .header__dot_color_black-blue {
+        right: 100px;
+        width: 10px;
+        height: 10px;
+        bottom: 50px;
+    }
+
+    .header__dot_color_light-orange {
+        top: 50px;
+        left: 200px;
+        width: 20px;
+        height: 20px;
+        background-color: orange;
+    }
+
+    .header__button {
+        font-size: 8px;
+        width: 80px;
+        padding: 5px;
+        border-radius: 1rem;
+        transition: .3s;
+        cursor: pointer;
+    }
+
+    .header__text-body {
+        font-size: 10px;
+    }
+
+    .header__text-body:first-child {
+        margin-top: 10px;
+    }
+}
